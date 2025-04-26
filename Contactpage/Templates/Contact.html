@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Reviews</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      color: #231F40;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #525FE1;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.63;
+      font-weight: 500;
+      color: #6F6B80;
+      margin: 0 0 30px;
+    }
+
+    h5 {
+      font-weight: 700;
+    }
+
+    .mt--40 {
+      margin-top: 40px;
+    }
+
+    .mb--20 {
+      margin-bottom: 20px;
+    }
+
+    .pt--40 {
+      padding-top: 40px;
+    }
+
+    .mb--25 {
+      margin-bottom: 25px;
+    }
+
+    .fa-star {
+      color: #ffa41b;
+    }
+
+    .course-details-card {
+      border-radius: 8px;
+      border: 1px solid #EEEEEE;
+      padding: 30px;
+      background-color: #fff;
+    }
+
+    .rating-box {
+      background: #FFFFFF;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+      border-radius: 5px;
+      text-align: center;
+      min-width: 200px;
+      padding: 29px 10px;
+    }
+
+    .rating-number {
+      font-weight: 800;
+      font-size: 72px;
+      line-height: 90px;
+      color: #231F40;
+    }
+
+    .rating-box span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .review-wrapper .single-progress-bar {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .review-wrapper .rating-text {
+      display: inline-block;
+      width: 30px;
+    }
+
+    .review-wrapper .progress {
+      display: inline-block;
+      width: 60%;
+      height: 12px;
+      margin-left: 10px;
+      background: #EEEEEE;
+      vertical-align: middle;
+    }
+
+    .review-wrapper .progress-bar {
+      background-color: #FFA41B;
+      height: 100%;
+    }
+
+    .review-wrapper .rating-value {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .edu-comment {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    .edu-comment .thumbnail {
+      min-width: 70px;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      overflow: hidden;
+      margin-right: 25px;
+    }
+
+    .edu-comment .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .edu-comment .comment-content .comment-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .edu-comment .title {
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .edu-comment .subtitle {
+      font-weight: 700;
+      font-size: 16px;
+      color: #231F40;
+      margin: 10px 0;
+      display: block;
+    }
+
+    @media only screen and (max-width: 575px) {
+      .edu-comment {
+        flex-direction: column;
+      }
+
+      .edu-comment .comment-content {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt--40">
+    <div class="row">
+      <div class="col-md-8 course-details-content">
+        <div class="course-details-card">
+          <h5 class="mb--20">Review</h5>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="rating-box">
+                <div class="rating-number">5.0</div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <span>(25 Reviews)</span>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="review-wrapper">
+                <div class="single-progress-bar">
+                  <span class="rating-text">5 <i class="fa fa-star"></i></span>
+                  <div class="progress"><div class="progress-bar" style="width: 100%;"></div></div>
+                  <span class="rating-value">23</span>
+                </div>
+                <div class="single-progress-bar">
+                  <span class="rating-text">4 <i class="fa fa-star"></i></span>
+                  <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+                  <span class="rating-value">3</span>
+                </div>
+                <div class="single-progress-bar">
+                  <span class="rating-text">3 <i class="fa fa-star"></i></span>
+                  <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div>
+                  <span class="rating-value">2</span>
+                </div>
+                <div class="single-progress-bar">
+                  <span class="rating-text">2 <i class="fa fa-star"></i></span>
+                  <div class="progress"><div class="progress-bar" style="width: 40%;"></div></div>
+                  <span class="rating-value">3</span>
+                </div>
+                <div class="single-progress-bar">
+                  <span class="rating-text">1 <i class="fa fa-star"></i></span>
+                  <div class="progress"><div class="progress-bar" style="width: 20%;"></div></div>
+                  <span class="rating-value">2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-wrapper pt--40">
+            <h5 class="mb--25">Reviews</h5>
+
+            <div class="edu-comment">
+              <div class="thumbnail"><img src="images/student-1.png" alt="Student 1" /></div>
+              <div class="comment-content">
+                <div class="comment-top">
+                  <h6 class="title">CSS Tutorials</h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <span class="subtitle">“Outstanding Review Design”</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+
+            <div class="edu-comment">
+              <div class="thumbnail"><img src="images/student-1.png" alt="Student 2" /></div>
+              <div class="comment-content">
+                <div class="comment-top">
+                  <h6 class="title">HTML CSS Tutorials</h6>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <span class="subtitle">“Nice Review Design”</span>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

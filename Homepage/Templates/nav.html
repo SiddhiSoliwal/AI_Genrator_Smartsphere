@@ -1,0 +1,64 @@
+<!-- templates/nav.html -->
+<style>
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background-color: #0000000000; /* Transparent background */
+     
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    #logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nav-links li {
+      margin: 0 15px;
+    }
+  
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-links a:hover {
+      font-size: 20px;
+      font-family: 'Georgia', serif;
+      color: rgb(227, 241, 239);
+    }
+  
+    .nav-links a:active {
+      font-size: 22px;
+      font-family: 'Georgia', serif;
+      color: #a279ff;
+    }
+  </style>
+  
+  <div class="navbar">
+    <div id="logo">SmartSphere</div>
+    <ul class="nav-links">
+      <li><a href="{% url 'Home' %}">Home</a></li>
+      <li><a href="{% url 'About' %}">About</a></li>
+      <li><a href="{% url 'Chat' %}">Chat</a></li>
+      <li><a href="{% url 'Contact' %}">Contact</a></li>
+      <li><a href="{% url 'Login' %}">Login</a></li>
+    </ul>
+  </div>
+  
